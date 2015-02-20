@@ -1,5 +1,5 @@
 {
-    "name":        "dms/dms-filter",
+    "name":        "dantoncancella/dms-filter",
     "type":        "library",
     "description": "DMS Filter provides Annotation based entity filtering.",
     "keywords":    ["filter", "dms"],
