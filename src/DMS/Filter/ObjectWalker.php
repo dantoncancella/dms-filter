@@ -78,6 +78,11 @@ class ObjectWalker
             $filter->setCurrentObject($this->object);
         }
 
+        if ($filter instanceof EntityManagerFilter) {
+            $em = $this->filterLoader->getEntityManager();
+            $filter->setEntityManager($em);
+        }
+
         $filteredValue = $filter->apply($filterRule, $value);
 
         $this->setPropertyValue($property, $filteredValue);
